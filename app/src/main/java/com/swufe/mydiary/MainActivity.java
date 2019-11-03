@@ -220,8 +220,6 @@ public class MainActivity extends ListActivity implements OnScrollListener {
     public class DeleteRecordListener implements OnClickListener{
         public void onClick(View v) {
             // TODO Auto-generated method stub
-
-
         }
     }
     public class CheckRecordListener implements OnClickListener{

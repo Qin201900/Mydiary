@@ -15,7 +15,7 @@ public class ListViewAdapter extends BaseAdapter {
 
     private List<String> listItems;
     private List<String> listItemTimes;
-    //private HashMap<String,String> listItems;
+
 
     private LayoutInflater inflater;
 
@@ -26,35 +26,22 @@ public class ListViewAdapter extends BaseAdapter {
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
-    /**
-     * 往列表添加条目
-     * @param item
-     */
-    public void addListItem(String item, String time){
+    public void addListItem(String item, String time){//往列表里添加数据
         listItems.add(item);
         listItemTimes.add(time);
     }
 
-    /**
-     * 删除指定位置的数据
-     * @param position
-     */
-    public void removeListItem(int position){
+    public void removeListItem(int position){//删除指定位置的数据
         listItems.remove(position);
         listItemTimes.remove(position);
     }
 
-    /**
-     * 获取列表的数量
-     */
-    public int getCount() {
+    public int getCount() {//获取列表个数
         // TODO Auto-generated method stub
         return listItems.size();
     }
-    /**
-     * 根据索引获取列表对应索引的内容
-     */
-    public Object getItem(int position) {
+
+    public Object getItem(int position) {//按索引获取内容
         // TODO Auto-generated method stub
         return listItems.get(position);
     }
@@ -64,10 +51,7 @@ public class ListViewAdapter extends BaseAdapter {
         return position;
     }
 
-    /**
-     * 通过该函数显示数据
-     */
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {//显示数据
         // TODO Auto-generated method stub
 
         if(convertView == null){
