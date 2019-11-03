@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mydiary</string>
+    <string name="hello">hello</string>
+    <string name="addButtonText">Add Record</string>
+    <string name="edit">Edit Record</string>
+    <string name="check">Check Record</string>
+</resources>
