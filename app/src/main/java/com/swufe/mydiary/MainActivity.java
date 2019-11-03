@@ -143,7 +143,7 @@ public class MainActivity extends ListActivity implements OnScrollListener {
             case 0://删除日记
                 try{
                     cursor.moveToPosition(menuInfo.position);
-                    int i = dm.delete(Long.parseLong(cursor.getString(cursor.getColumnIndex("_id"))));//鍒犻櫎鏁版嵁
+                    int i = dm.delete(Long.parseLong(cursor.getString(cursor.getColumnIndex("_id"))));//删除数据
                     adapter.removeListItem(menuInfo.position);//删除数据
                     adapter.notifyDataSetChanged();//数据改变，刷新界面
                 }catch(Exception ex){
